@@ -109,8 +109,17 @@
     }
     .author-card:hover { transform: translateY(-3px); border-color: #d6b5bf; box-shadow: 0 10px 28px #5500190d; }
     .author-top { display: flex; align-items: center; gap: 15px; }
-    .avatar { width: 58px; height: 58px; flex: none; background: #f9e9ed; color: var(--wine); display: flex; justify-content: center; align-items: center; border-radius: 13px; font-size: 20px; font-weight: 840; letter-spacing: -.055em; }
-    .author-name { margin: 0 0 5px; font-size: 20px; font-weight: 800; letter-spacing: -.035em; }
+    .avatar {
+  width: 58px;
+  height: 58px;
+  flex: none;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #f9e9ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     .affiliation { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
     .author-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 10px; color: var(--wine); text-decoration: none; font-weight: 800; font-size: 14px; border-top: 1px solid #f0edef; padding-top: 16px; }
     .author-link:hover { color: var(--wine-dark); }
@@ -137,7 +146,10 @@
       .section-desc { font-size: 14px; margin-bottom: 20px; }
       .authors { grid-template-columns: 1fr; gap: 11px; }
       .author-card { padding: 18px; gap: 14px; border-radius: 12px; }
-      .avatar { width: 51px; height: 51px; font-size: 19px; border-radius: 11px; }
+      .avatar {
+    width: 52px;
+    height: 52px;
+  }
       .author-name { font-size: 18px; }
       .affiliation { font-size: 12px; }
       .author-link { padding-top: 12px; }
@@ -171,19 +183,29 @@
     <p class="section-desc">Select a researcher to open their LinkedIn profile.</p>
     <div class="authors">
       <article class="author-card">
-        <div class="author-top"><div class="avatar" aria-hidden="true">YC</div><div><h3 class="author-name">Yewon Cho</h3><p class="affiliation">Korea University</p></div></div>
+        <div class="author-top"><div class="avatar">
+           <img src="images/Yewon_Cho.jpg" alt="Yewon Cho profile photo">
+        </div>
+          <div><h3 class="author-name">Yewon Cho</h3><p class="affiliation">Korea University</p></div></div>
         <a class="author-link" href="https://www.linkedin.com/in/yewoncho330" target="_blank" rel="noopener noreferrer" aria-label="Open Yewon Cho's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       </article>
       <article class="author-card">
-        <div class="author-top"><div class="avatar" aria-hidden="true">HH</div><div><h3 class="author-name">Hyeongsoon Hwang</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
+        <div class="author-top"><div class="avatar">
+           <img src="images/Hyeongsoon Hwang.jpg" alt="Hyeongsoon Hwang profile photo">
+        </div>
+          <div><h3 class="author-name">Hyeongsoon Hwang</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
         <a class="author-link" href="https://www.linkedin.com/in/hyeongsoon-hwang-381a9230a/" target="_blank" rel="noopener noreferrer" aria-label="Open Hyeongsoon Hwang's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       </article>
-      <article class="author-card">
-        <div class="author-top"><div class="avatar" aria-hidden="true">YP</div><div><h3 class="author-name">Yein Park</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
+        <div class="author-top"><div class="avatar">
+           <img src="images/Yein Park.jpg" alt="Yein Park profile photo">
+        </div>
+          <div><h3 class="author-name">Yein Park</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
         <a class="author-link" href="https://www.linkedin.com/in/yein-park/" target="_blank" rel="noopener noreferrer" aria-label="Open Yein Park's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       </article>
       <article class="author-card">
-        <div class="author-top"><div class="avatar" aria-hidden="true">HW</div><div><h3 class="author-name">Hyeon Hwang</h3><p class="affiliation">Korea University</p></div></div>
+        <div class="author-top"><div class="avatar">
+           <img src="images/hyeon_hwang" alt="Hyeon Hwang profile photo">
+        </div><div><h3 class="author-name">Hyeon Hwang</h3><p class="affiliation">Korea University</p></div></div>
         <a class="author-link" href="https://www.linkedin.com/in/hyeon-hwang-a731a8287/" target="_blank" rel="noopener noreferrer" aria-label="Open Hyeon Hwang's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       </article>
     </div>
