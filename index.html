@@ -93,7 +93,8 @@
     .pill-link:hover { transform: translateY(-2px); box-shadow: 0 6px 16px #55001912; }
     .pill-link.primary { background: var(--wine); border-color: var(--wine); color: white; }
     .pill-link svg { width: 17px; height: 17px; }
-    main { padding: 52px 0 100px; }
+    /* Place breathing room BELOW the About the research panel, before the footer. */
+    main.wrap { padding-bottom: 48px; }
     .section-label { margin: 0 0 7px; color: var(--wine); text-transform: uppercase; font-size: 11px; font-weight: 850; letter-spacing: .16em; }
     .section-heading { font-size: 31px; letter-spacing: -.045em; margin: 0 0 7px; line-height: 1.15; }
     .section-desc { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0 0 28px; }
@@ -155,7 +156,7 @@
       .hero-inner { padding: 53px 21px 44px; }
       h1 { font-size: clamp(37px, 11vw, 50px); }
       .hero-actions { margin-top: 22px; }
-      main { padding: 37px 0 85px; }
+      main.wrap { padding-bottom: 40px; }
       .section-heading { font-size: 26px; }
       .section-desc { font-size: 14px; margin-bottom: 20px; }
       .authors { grid-template-columns: 1fr; gap: 11px; }
