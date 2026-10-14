@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#900026" />
+  <meta name="description" content="Connect with the authors of MidThink: Adaptive Latent Block Insertion via Online Reward Optimization — EMNLP 2026, Main 5616." />
+  <meta property="og:title" content="Meet the MidThink Authors | EMNLP 2026" />
+  <meta property="og:description" content="LinkedIn profiles and paper for the MidThink research team." />
+  <title>Meet the MidThink Authors · EMNLP 2026</title>
+  <style>
+    :root {
+      --wine: #92002a;
+      --wine-dark: #6a001d;
+      --ink: #1a1b21;
+      --muted: #61636d;
+      --line: #e9e5e6;
+      --soft: #fbf0f2;
+      --surface: #ffffff;
+      --canvas: #faf8f8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background: var(--canvas);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--wine); outline-offset: 4px; border-radius: 6px; }
+    .site-head {
+      background: white;
+      border-bottom: 1px solid #eee8e9;
+    }
+    .head-inner {
+      max-width: 1010px;
+      min-height: 72px;
+      padding: 0 32px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .wordmark { font-size: 21px; font-weight: 850; letter-spacing: -1.1px; color: var(--wine); }
+    .wordmark span { color: #161b27; }
+    .conf-label {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 750;
+      color: #5e5e68;
+      white-space: nowrap;
+      letter-spacing: .07em;
+    }
+    .conf-label b { border: 1px solid #ead8de; background: #fff7f9; color: var(--wine); padding: 7px 10px; border-radius: 30px; font-size: 11px; }
+    .wrap { max-width: 1010px; margin: 0 auto; padding: 0 32px; }
+    .hero {
+      overflow: hidden;
+      isolation: isolate;
+      position: relative;
+      background: linear-gradient(128deg, #fff 12%, #fff7f8 67%, #f8e9ed 100%);
+      border-bottom: 1px solid #eee5e7;
+    }
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 540px;
+      height: 540px;
+      top: -310px;
+      right: -180px;
+      border: 80px solid rgba(146, 0, 42, .045);
+      border-radius: 50%;
+    }
+    .hero-inner { padding: 72px 32px 63px; }
+    .eyebrow { display: flex; align-items: center; gap: 11px; color: var(--wine); font-size: 12px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: block; width: 27px; height: 3px; border-radius: 2px; background: var(--wine); }
+    h1 { max-width: 750px; margin: 21px 0 17px; font-weight: 800; font-size: clamp(37px, 5.6vw, 64px); line-height: 1.08; letter-spacing: -.055em; }
+    .title-accent { color: var(--wine); }
+    .summary { color: var(--muted); max-width: 735px; line-height: 1.6; font-size: clamp(15px, 2vw, 18px); margin: 0; }
+    .paper-title { color: var(--ink); font-weight: 650; }
+    .hero-actions { margin-top: 25px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .pill-link { display: inline-flex; align-items: center; gap: 10px; padding: 11px 17px; border-radius: 9px; font-size: 13px; font-weight: 750; text-decoration: none; border: 1px solid #dbc8cf; background: white; transition: transform .15s, box-shadow .15s; }
+    .pill-link:hover { transform: translateY(-2px); box-shadow: 0 6px 16px #55001912; }
+    .pill-link.primary { background: var(--wine); border-color: var(--wine); color: white; }
+    .pill-link svg { width: 17px; height: 17px; }
+    main { padding: 52px 0 60px; }
+    .section-label { margin: 0 0 7px; color: var(--wine); text-transform: uppercase; font-size: 11px; font-weight: 850; letter-spacing: .16em; }
+    .section-heading { font-size: 31px; letter-spacing: -.045em; margin: 0 0 7px; line-height: 1.15; }
+    .section-desc { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0 0 28px; }
+    .authors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+    .author-card {
+      position: relative;
+      padding: 25px 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: 0 5px 22px rgba(70, 37, 51, .035);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 22px;
+      transition: border-color .15s, transform .15s, box-shadow .15s;
+    }
+    .author-card:hover { transform: translateY(-3px); border-color: #d6b5bf; box-shadow: 0 10px 28px #5500190d; }
+    .author-top { display: flex; align-items: center; gap: 15px; }
+    .avatar { width: 58px; height: 58px; flex: none; background: #f9e9ed; color: var(--wine); display: flex; justify-content: center; align-items: center; border-radius: 13px; font-size: 20px; font-weight: 840; letter-spacing: -.055em; }
+    .author-name { margin: 0 0 5px; font-size: 20px; font-weight: 800; letter-spacing: -.035em; }
+    .affiliation { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .author-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 10px; color: var(--wine); text-decoration: none; font-weight: 800; font-size: 14px; border-top: 1px solid #f0edef; padding-top: 16px; }
+    .author-link:hover { color: var(--wine-dark); }
+    .linkedin-group { display: inline-flex; gap: 8px; align-items: center; }
+    .linkedin-icon { width: 18px; height: 18px; flex: none; }
+    .out-icon { width: 18px; height: 18px; }
+    .callout { display: flex; gap: 16px; align-items: flex-start; margin-top: 28px; padding: 21px 24px; border: 1px solid #ead8de; background: #fff4f6; border-radius: 13px; }
+    .callout .mark { color: var(--wine); flex: none; display: grid; place-items: center; width: 35px; height: 35px; background: #f2dce3; border-radius: 9px; font-size: 19px; }
+    .callout b { display: block; font-size: 14px; margin-bottom: 4px; }
+    .callout p { margin: 0; color: #5b5360; font-size: 13px; line-height: 1.6; }
+    footer { border-top: 1px solid #eae5e7; background: white; }
+    .footer-inner { padding: 22px 32px; display: flex; align-items: center; justify-content: space-between; gap: 14px; color: var(--muted); font-size: 12px; }
+    .footer-inner strong { color: var(--wine); }
+    @media (max-width: 680px) {
+      .head-inner { min-height: 64px; padding: 0 21px; }
+      .conf-label { gap: 6px; font-size: 10px; }
+      .conf-label b { padding: 6px 8px; font-size: 10px; }
+      .wrap { padding: 0 21px; }
+      .hero-inner { padding: 53px 21px 44px; }
+      h1 { font-size: clamp(37px, 11vw, 50px); }
+      .hero-actions { margin-top: 22px; }
+      main { padding: 37px 0 45px; }
+      .section-heading { font-size: 26px; }
+      .section-desc { font-size: 14px; margin-bottom: 20px; }
+      .authors { grid-template-columns: 1fr; gap: 11px; }
+      .author-card { padding: 18px; gap: 14px; border-radius: 12px; }
+      .avatar { width: 51px; height: 51px; font-size: 19px; border-radius: 11px; }
+      .author-name { font-size: 18px; }
+      .affiliation { font-size: 12px; }
+      .author-link { padding-top: 12px; }
+      .callout { padding: 18px; margin-top: 23px; }
+      .footer-inner { padding: 20px 21px; align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pill-link, .author-card { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="head-inner">
+      <div class="wordmark" aria-label="MidThink">Mid<span>Think</span><span style="color:var(--wine)">.</span></div>
+      <div class="conf-label">EMNLP 2026 <b>MAIN · 5616</b></div>
+    </div>
+  </header>
+  <section class="hero" aria-labelledby="page-title">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Meet the researchers</div>
+      <h1 id="page-title">Thinking beyond<br /><span class="title-accent">the next token.</span></h1>
+      <p class="summary">Connect with the authors of <span class="paper-title">Adaptive Latent Block Insertion via Online Reward Optimization</span>, introducing <strong>MidThink</strong> at EMNLP 2026.</p>
+      <div class="hero-actions">
+        <a class="pill-link primary" href="#authors">Meet the authors <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v16m0 0 6-6m-6 6-6-6" /></svg></a>
+        <a class="pill-link" href="MidThink_paper.pdf" target="_blank" rel="noopener noreferrer">Read the paper (PDF) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3h7v7M10 14 21 3M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" /></svg></a>
+      </div>
+    </div>
+  </section>
+  <main id="authors" class="wrap">
+    <p class="section-label">Research team</p>
+    <h2 class="section-heading">Connect with our authors</h2>
+    <p class="section-desc">Select a researcher to open their LinkedIn profile.</p>
+    <div class="authors">
+      <article class="author-card">
+        <div class="author-top"><div class="avatar" aria-hidden="true">YC</div><div><h3 class="author-name">Yewon Cho</h3><p class="affiliation">Korea University</p></div></div>
+        <a class="author-link" href="https://www.linkedin.com/in/yewoncho330" target="_blank" rel="noopener noreferrer" aria-label="Open Yewon Cho's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      </article>
+      <article class="author-card">
+        <div class="author-top"><div class="avatar" aria-hidden="true">HH</div><div><h3 class="author-name">Hyeongsoon Hwang</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
+        <a class="author-link" href="https://www.linkedin.com/in/hyeongsoon-hwang-381a9230a/" target="_blank" rel="noopener noreferrer" aria-label="Open Hyeongsoon Hwang's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      </article>
+      <article class="author-card">
+        <div class="author-top"><div class="avatar" aria-hidden="true">YP</div><div><h3 class="author-name">Yein Park</h3><p class="affiliation">Korea University · AIGEN Sciences</p></div></div>
+        <a class="author-link" href="https://www.linkedin.com/in/yein-park/" target="_blank" rel="noopener noreferrer" aria-label="Open Yein Park's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      </article>
+      <article class="author-card">
+        <div class="author-top"><div class="avatar" aria-hidden="true">HW</div><div><h3 class="author-name">Hyeon Hwang</h3><p class="affiliation">Korea University</p></div></div>
+        <a class="author-link" href="https://www.linkedin.com/in/hyeon-hwang-a731a8287/" target="_blank" rel="noopener noreferrer" aria-label="Open Hyeon Hwang's LinkedIn profile"><span class="linkedin-group"><svg class="linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.5 18H6V9.5h2.5V18ZM7.25 8.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9ZM18 18h-2.5v-4.1c0-1-.02-2.28-1.4-2.28-1.4 0-1.6 1.08-1.6 2.2V18H10V9.5h2.4v1.16h.03a2.65 2.65 0 0 1 2.39-1.32c2.55 0 3.18 1.68 3.18 3.87V18Z"/></svg>View LinkedIn</span><svg class="out-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      </article>
+    </div>
+    <aside class="callout" aria-label="About MidThink">
+      <div class="mark" aria-hidden="true">✦</div>
+      <div><b>About the research</b><p>MidThink optimizes continuous latent blocks both before and during language-model reasoning, using a rollout-based reward to guide each update. This page brings the team's links together in one place.</p></div>
+    </aside>
+  </main>
+  <footer>
+    <div class="wrap footer-inner"><span><strong>MidThink</strong> · EMNLP 2026 · Main Paper 5616</span><span>Korea University · AIGEN Sciences</span></div>
+  </footer>
+</body>
+</html>
