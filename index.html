@@ -58,6 +58,10 @@
       letter-spacing: .07em;
     }
     .conf-label b { border: 1px solid #ead8de; background: #fff7f9; color: var(--wine); padding: 7px 10px; border-radius: 30px; font-size: 11px; }
+    /* EMNLP 2026 conference logo from the existing images/ directory */
+    .conference-brand { display: flex; align-items: center; justify-content: flex-end; gap: 13px; flex: none; }
+    .emnlp-logo { display: block; width: 150px; height: 58px; object-fit: contain; }
+    .conference-brand .conf-label { gap: 0; }
     .wrap { max-width: 1010px; margin: 0 auto; padding: 0 32px; }
     .hero {
       overflow: hidden;
@@ -89,7 +93,7 @@
     .pill-link:hover { transform: translateY(-2px); box-shadow: 0 6px 16px #55001912; }
     .pill-link.primary { background: var(--wine); border-color: var(--wine); color: white; }
     .pill-link svg { width: 17px; height: 17px; }
-    main { padding: 52px 0 60px; }
+    main { padding: 52px 0 100px; }
     .section-label { margin: 0 0 7px; color: var(--wine); text-transform: uppercase; font-size: 11px; font-weight: 850; letter-spacing: .16em; }
     .section-heading { font-size: 31px; letter-spacing: -.045em; margin: 0 0 7px; line-height: 1.15; }
     .section-desc { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 0 0 28px; }
@@ -142,14 +146,16 @@
     .footer-inner { padding: 22px 32px; display: flex; align-items: center; justify-content: space-between; gap: 14px; color: var(--muted); font-size: 12px; }
     .footer-inner strong { color: var(--wine); }
     @media (max-width: 680px) {
-      .head-inner { min-height: 64px; padding: 0 21px; }
+      .head-inner { min-height: 88px; padding: 8px 21px; }
+      .conference-brand { flex-direction: column; align-items: flex-end; gap: 3px; }
+      .emnlp-logo { width: 115px; height: 47px; }
       .conf-label { gap: 6px; font-size: 10px; }
       .conf-label b { padding: 6px 8px; font-size: 10px; }
       .wrap { padding: 0 21px; }
       .hero-inner { padding: 53px 21px 44px; }
       h1 { font-size: clamp(37px, 11vw, 50px); }
       .hero-actions { margin-top: 22px; }
-      main { padding: 37px 0 45px; }
+      main { padding: 37px 0 85px; }
       .section-heading { font-size: 26px; }
       .section-desc { font-size: 14px; margin-bottom: 20px; }
       .authors { grid-template-columns: 1fr; gap: 11px; }
@@ -171,7 +177,10 @@
   <header class="site-head">
     <div class="head-inner">
       <div class="wordmark" aria-label="MidThink">Mid<span>Think</span><span style="color:var(--wine)">.</span></div>
-      <div class="conf-label">EMNLP 2026 <b>MAIN · 5616</b></div>
+      <div class="conference-brand">
+        <img class="emnlp-logo" src="images/emnlp_2026_logo_v1.png" alt="EMNLP 2026 logo" />
+        <div class="conf-label"><b>MAIN · 5616</b></div>
+      </div>
     </div>
   </header>
   <section class="hero" aria-labelledby="page-title">
